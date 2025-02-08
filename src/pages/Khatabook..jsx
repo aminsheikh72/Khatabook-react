@@ -34,9 +34,11 @@ setTransactions(transactions.filter((transaction)=> transaction.id !== oldId ? t
 
   return (
     <div className="min-h-screen bg-gradient-to-br bg-[url(/public/images/bg.avif)] bg-cover bg-center p-6 flex flex-col items-center">
-      <h1 className="text-4xl font-extrabold text-white mb-6">
+    
+      <h1 className="text-4xl font-extrabold text-white text-center mb-5">
         Khatabook Dashboard
       </h1>
+      
 
       <Form addTransaction={addTransaction} edit={edit} updateTransaction={updateTransaction} />
 
