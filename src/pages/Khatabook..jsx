@@ -33,7 +33,7 @@ setTransactions(transactions.filter((transaction)=> transaction.id !== oldId ? t
  }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br bg-[url(/public/images/bg.avif)] bg-cover bg-center p-6 flex flex-col items-center">
+    <div className="min-h-screen w-[100%] bg-gradient-to-br bg-[url(/public/images/bg.avif)] bg-cover bg-center p-6 flex flex-col items-center">
     
       <h1 className="text-4xl font-extrabold text-white text-center mb-5">
         Khatabook Dashboard

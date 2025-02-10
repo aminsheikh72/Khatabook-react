@@ -29,7 +29,7 @@ setText(edit.transaction.text)
   },[edit])
 
   return (
-    <form onSubmit={(e)=> handle(e)}>
+    <form className=' w-[100%] flex items-center justify-center' onSubmit={(e)=> handle(e)}>
     <div className="bg-white shadow-lg rounded-xl p-6 w-full max-w-lg">
     <div className="flex flex-col gap-4">
       <input
@@ -49,7 +49,7 @@ setText(edit.transaction.text)
         required
       />
       <button className="bg-gradient-to-r from-blue-500 to-purple-500 text-white px-5 py-3 rounded-lg flex items-center gap-2 w-full justify-center shadow-md hover:shadow-lg transition-all">
-        <PlusCircle size={20} /> <span className="font-semibold">Add Entry</span>
+        <PlusCircle size={20} /> <span className="font-semibold">{edit.isEdit === true ? "Update Entry" : "Add Entry" }</span>
       </button>
     </div>
   </div>
